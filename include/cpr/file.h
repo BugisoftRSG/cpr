@@ -30,7 +30,7 @@ class Files {
     Files(Files&& old) noexcept = default;
 
     Files(const std::initializer_list<File>& p_files) : files{p_files} {}
-    Files(const std::vector<File> p_files) : files{p_files} {}
+    Files(std::vector<File> p_files) : files{p_files} {}
     Files(const std::initializer_list<std::string>& p_filepaths);
 
     ~Files() noexcept = default;
